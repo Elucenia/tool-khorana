@@ -1,0 +1,257 @@
+{
+  "tool": {
+    "id": "khorana",
+    "title": "Escore de Khorana",
+    "short": "Risco de TEV no paciente em quimioterapia",
+    "desc": "Escore de Khorana: risco de tromboembolismo venoso em pacientes ambulatoriais com câncer que iniciam quimioterapia, e indicação de profilaxia.",
+    "lead": "Estima o risco de tromboembolismo venoso sintomático nos primeiros meses de quimioterapia ambulatorial e orienta a discussão de tromboprofilaxia.",
+    "spec": [
+      "oncologia-clinica",
+      "hematologia-e-hemoterapia",
+      "cirurgia-oncologica"
+    ],
+    "fields": [
+      [
+        "sitio",
+        "Local do tumor primário",
+        "radio",
+        {
+          "opts": {
+            "0": "Outros",
+            "1": "Alto risco: pulmão, linfoma, ginecológico, bexiga ou testículo",
+            "2": "Muito alto risco: estômago ou pâncreas"
+          }
+        }
+      ],
+      [
+        "plaq",
+        "Plaquetas pré-quimioterapia ≥ 350.000/µL",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "hb",
+        "Hemoglobina &lt; 10 g/dL ou uso de estimulador da eritropoese",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "leuco",
+        "Leucócitos pré-quimioterapia &gt; 11.000/µL",
+        "chk",
+        {
+          "pts": 1
+        }
+      ],
+      [
+        "imc",
+        "IMC ≥ 35 kg/m²",
+        "chk",
+        {
+          "pts": 1
+        }
+      ]
+    ],
+    "score": {
+      "label": "Escore de Khorana",
+      "unit": "",
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)",
+          "Profilaxia de rotina não indicada."
+        ],
+        [
+          1,
+          "mid",
+          "Risco intermediário: TEV em 1,8%",
+          "Com 1 ponto, profilaxia de rotina não indicada."
+        ],
+        [
+          2,
+          "mid",
+          "Risco intermediário: TEV em 1,8%",
+          "ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento."
+        ],
+        [
+          3,
+          "high",
+          "Alto risco: TEV em 7,1%",
+          "ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação."
+        ]
+      ]
+    },
+    "formula": "<p>Estômago ou pâncreas 2 · pulmão, linfoma, ginecológico, bexiga ou testículo 1 · plaquetas ≥ 350.000/µL 1 · Hb &lt; 10 g/dL ou estimulador da eritropoese 1 · leucócitos &gt; 11.000/µL 1 · IMC ≥ 35 kg/m² 1. Máximo: 6.</p>",
+    "table": [
+      [
+        "Pontos",
+        "Risco",
+        "TEV sintomático (derivação)",
+        "TEV (validação)"
+      ],
+      [
+        "0",
+        "Baixo",
+        "0,8%",
+        "0,3%"
+      ],
+      [
+        "1–2",
+        "Intermediário",
+        "1,8%",
+        "2%"
+      ],
+      [
+        "≥ 3",
+        "Alto",
+        "7,1%",
+        "6,7%"
+      ]
+    ],
+    "table_note": "Taxas em mediana de 2,5 meses de seguimento no estudo original.",
+    "tips": [
+      "Use hemograma <strong>antes</strong> do primeiro ciclo: o escore foi derivado com os exames pré-quimioterapia.",
+      "Tumores cerebrais primários e mieloma não estão no escore original e têm risco alto por si; mieloma tem escores próprios (IMPEDE VTE, SAVED).",
+      "O escore identifica poucos pacientes como alto risco: boa parte dos eventos ocorre em quem tem 1 a 2 pontos.",
+      "Antes de prescrever anticoagulante oral direto, veja risco de sangramento (tumores gastrointestinais e geniturinários com lesão luminal), plaquetas e interações com a quimioterapia."
+    ],
+    "sources": [
+      [
+        "Khorana AA et al. Development and validation of a predictive model for chemotherapy-associated thrombosis. Blood, 2008.",
+        "https://doi.org/10.1182/blood-2007-10-116327"
+      ],
+      [
+        "Key NS et al. Venous thromboembolism prophylaxis and treatment in patients with cancer: ASCO clinical practice guideline update. J Clin Oncol, 2020.",
+        "https://doi.org/10.1200/JCO.19.01461"
+      ]
+    ],
+    "cases": [
+      [
+        "Câncer de mama, exames normais: 0 ponto",
+        {
+          "sitio": "0"
+        },
+        {
+          "score": 0,
+          "level": "low"
+        }
+      ],
+      [
+        "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        {
+          "sitio": "1",
+          "plaq": true
+        },
+        {
+          "score": 2,
+          "level": "mid",
+          "verdict": "intermediário"
+        }
+      ],
+      [
+        "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        {
+          "sitio": "2",
+          "hb": true
+        },
+        {
+          "score": 3,
+          "level": "high"
+        }
+      ]
+    ],
+    "batch": "onco-diagnostico",
+    "kind": "Escore",
+    "config": {
+      "unit": "",
+      "label": "Escore de Khorana",
+      "fields": [
+        [
+          "sitio",
+          "radio",
+          0
+        ],
+        [
+          "plaq",
+          "chk",
+          1
+        ],
+        [
+          "hb",
+          "chk",
+          1
+        ],
+        [
+          "leuco",
+          "chk",
+          1
+        ],
+        [
+          "imc",
+          "chk",
+          1
+        ]
+      ],
+      "bands": [
+        [
+          0,
+          "low",
+          "Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)",
+          "Profilaxia de rotina não indicada."
+        ],
+        [
+          1,
+          "mid",
+          "Risco intermediário: TEV em 1,8%",
+          "Com 1 ponto, profilaxia de rotina não indicada."
+        ],
+        [
+          2,
+          "mid",
+          "Risco intermediário: TEV em 1,8%",
+          "ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento."
+        ],
+        [
+          3,
+          "high",
+          "Alto risco: TEV em 7,1%",
+          "ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação."
+        ]
+      ]
+    },
+    "areaId": "onco-diagnostico",
+    "clinicalReview": "pending",
+    "sourceReview": "pending",
+    "sourceFile": "app/content/ferramentas/onco-diagnostico.php",
+    "arithmeticTest": {
+      "status": "passed",
+      "testedAt": "2026-09-25",
+      "total": 3,
+      "passed": 3,
+      "failures": []
+    },
+    "independentArithmeticTest": {
+      "status": "not-tested",
+      "testedAt": null,
+      "total": 0,
+      "passed": 0,
+      "cases": []
+    }
+  },
+  "review": {
+    "status": "needs-review",
+    "reason": "Revisão documental e clínica independente pendente.",
+    "clinicalValidation": "not-performed"
+  },
+  "sourceFile": {
+    "path": "app/content/ferramentas/onco-diagnostico.php",
+    "sha256": "29e7fd6aab1f8bf937a34267255855c21f804696da2b4817d6197578cdcbe743",
+    "bytes": 78570
+  },
+  "clinicalValidation": "not-performed"
+}

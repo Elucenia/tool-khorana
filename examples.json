@@ -1,0 +1,49 @@
+[
+  {
+    "label": "Câncer de mama, exames normais: 0 ponto",
+    "input": {
+      "sitio": "0"
+    },
+    "expected": {
+      "score": 0,
+      "level": "low"
+    },
+    "originalInput": {
+      "sitio": "0"
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+    "input": {
+      "sitio": "1",
+      "plaq": true
+    },
+    "expected": {
+      "score": 2,
+      "level": "mid",
+      "verdict": "intermediário"
+    },
+    "originalInput": {
+      "sitio": "1",
+      "plaq": true
+    },
+    "expandedZeroOptions": []
+  },
+  {
+    "label": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+    "input": {
+      "sitio": "2",
+      "hb": true
+    },
+    "expected": {
+      "score": 3,
+      "level": "high"
+    },
+    "originalInput": {
+      "sitio": "2",
+      "hb": true
+    },
+    "expandedZeroOptions": []
+  }
+]
