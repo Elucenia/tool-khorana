@@ -1,9 +1,11 @@
-/* ELUCENIA standalone integration. Source package metadata and rights: README.md. */
+/* tool-khorana · Elucenia · https://github.com/Elucenia/tool-khorana
+   Copyright (c) 2026 Elucenia · Felipe Guedes (fgxdev.com). Licensed under the Apache License 2.0: keep this notice and the NOTICE file, and mark your changes.
+   Standalone integration. Package metadata and rights: README.md. */
 (function(root){'use strict';
 function freeze(value){if(value&&typeof value==='object'){for(const item of Object.values(value))freeze(item);Object.freeze(value);}return value;}
 const TOOL=freeze({"id":"khorana","title":"Escore de Khorana","fields":[["sitio","Local do tumor primário","radio",{"opts":{"0":"Outros","1":"Alto risco: pulmão, linfoma, ginecológico, bexiga ou testículo","2":"Muito alto risco: estômago ou pâncreas"}}],["plaq","Plaquetas pré-quimioterapia ≥ 350.000/µL","chk",{"pts":1}],["hb","Hemoglobina &lt; 10 g/dL ou uso de estimulador da eritropoese","chk",{"pts":1}],["leuco","Leucócitos pré-quimioterapia &gt; 11.000/µL","chk",{"pts":1}],["imc","IMC ≥ 35 kg/m²","chk",{"pts":1}]],"config":{"unit":"","label":"Escore de Khorana","fields":[["sitio","radio",0],["plaq","chk",1],["hb","chk",1],["leuco","chk",1],["imc","chk",1]],"bands":[[0,"low","Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)","Profilaxia de rotina não indicada."],[1,"mid","Risco intermediário: TEV em 1,8%","Com 1 ponto, profilaxia de rotina não indicada."],[2,"mid","Risco intermediário: TEV em 1,8%","ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento."],[3,"high","Alto risco: TEV em 7,1%","ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação."]]},"reviewStatus":"needs-review","clinicalValidation":"not-performed"});
 const window={};
-/* ELUCENIA arithmetic registry. No DOM access, storage, telemetry or network requests. */
+/* Elucenia arithmetic registry. No DOM access, storage, telemetry or network requests. */
 (function(root){
   'use strict';
   const CALC={fn:Object.create(null)};
