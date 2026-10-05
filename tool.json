@@ -5,6 +5,7 @@
     "short": "Risco de TEV no paciente em quimioterapia",
     "desc": "Escore de Khorana: risco de tromboembolismo venoso em pacientes ambulatoriais com câncer que iniciam quimioterapia, e indicação de profilaxia.",
     "lead": "Estima o risco de tromboembolismo venoso sintomático nos primeiros meses de quimioterapia ambulatorial e orienta a discussão de tromboprofilaxia.",
+    "kind": "Escore",
     "spec": [
       "oncologia-clinica",
       "hematologia-e-hemoterapia",
@@ -27,99 +28,28 @@
         "plaq",
         "Plaquetas pré-quimioterapia ≥ 350.000/µL",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "hb",
         "Hemoglobina &lt; 10 g/dL ou uso de estimulador da eritropoese",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "leuco",
         "Leucócitos pré-quimioterapia &gt; 11.000/µL",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ],
       [
         "imc",
         "IMC ≥ 35 kg/m²",
         "chk",
-        {
-          "pts": 1
-        }
+        {}
       ]
     ],
-    "score": {
-      "label": "Escore de Khorana",
-      "unit": "",
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)",
-          "Profilaxia de rotina não indicada."
-        ],
-        [
-          1,
-          "mid",
-          "Risco intermediário: TEV em 1,8%",
-          "Com 1 ponto, profilaxia de rotina não indicada."
-        ],
-        [
-          2,
-          "mid",
-          "Risco intermediário: TEV em 1,8%",
-          "ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento."
-        ],
-        [
-          3,
-          "high",
-          "Alto risco: TEV em 7,1%",
-          "ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação."
-        ]
-      ]
-    },
     "formula": "<p>Estômago ou pâncreas 2 · pulmão, linfoma, ginecológico, bexiga ou testículo 1 · plaquetas ≥ 350.000/µL 1 · Hb &lt; 10 g/dL ou estimulador da eritropoese 1 · leucócitos &gt; 11.000/µL 1 · IMC ≥ 35 kg/m² 1. Máximo: 6.</p>",
-    "table": [
-      [
-        "Pontos",
-        "Risco",
-        "TEV sintomático (derivação)",
-        "TEV (validação)"
-      ],
-      [
-        "0",
-        "Baixo",
-        "0,8%",
-        "0,3%"
-      ],
-      [
-        "1–2",
-        "Intermediário",
-        "1,8%",
-        "2%"
-      ],
-      [
-        "≥ 3",
-        "Alto",
-        "7,1%",
-        "6,7%"
-      ]
-    ],
-    "table_note": "Taxas em mediana de 2,5 meses de seguimento no estudo original.",
-    "tips": [
-      "Use hemograma <strong>antes</strong> do primeiro ciclo: o escore foi derivado com os exames pré-quimioterapia.",
-      "Tumores cerebrais primários e mieloma não estão no escore original e têm risco alto por si; mieloma tem escores próprios (IMPEDE VTE, SAVED).",
-      "O escore identifica poucos pacientes como alto risco: boa parte dos eventos ocorre em quem tem 1 a 2 pontos.",
-      "Antes de prescrever anticoagulante oral direto, veja risco de sangramento (tumores gastrointestinais e geniturinários com lesão luminal), plaquetas e interações com a quimioterapia."
-    ],
     "sources": [
       [
         "Khorana AA et al. Development and validation of a predictive model for chemotherapy-associated thrombosis. Blood, 2008.",
@@ -128,6 +58,10 @@
       [
         "Key NS et al. Venous thromboembolism prophylaxis and treatment in patients with cancer: ASCO clinical practice guideline update. J Clin Oncol, 2020.",
         "https://doi.org/10.1200/JCO.19.01461"
+      ],
+      [
+        "ASH official VTE pocket guide, October2023, based on ASH2021 guideline",
+        "https://www.hematology.org/-/media/hematology/files/clinicians/guidelines/vte/vte-update-03_24/19894_vte-prophylaxis-pocket-guide-8-panel___0001_high_res_proof-(2).pdf"
       ]
     ],
     "cases": [
@@ -165,65 +99,6 @@
         }
       ]
     ],
-    "kind": "Escore",
-    "config": {
-      "unit": "",
-      "label": "Escore de Khorana",
-      "fields": [
-        [
-          "sitio",
-          "radio",
-          0
-        ],
-        [
-          "plaq",
-          "chk",
-          1
-        ],
-        [
-          "hb",
-          "chk",
-          1
-        ],
-        [
-          "leuco",
-          "chk",
-          1
-        ],
-        [
-          "imc",
-          "chk",
-          1
-        ]
-      ],
-      "bands": [
-        [
-          0,
-          "low",
-          "Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)",
-          "Profilaxia de rotina não indicada."
-        ],
-        [
-          1,
-          "mid",
-          "Risco intermediário: TEV em 1,8%",
-          "Com 1 ponto, profilaxia de rotina não indicada."
-        ],
-        [
-          2,
-          "mid",
-          "Risco intermediário: TEV em 1,8%",
-          "ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento."
-        ],
-        [
-          3,
-          "high",
-          "Alto risco: TEV em 7,1%",
-          "ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação."
-        ]
-      ]
-    },
-    "clinicalReview": "pending",
     "arithmeticTest": {
       "status": "passed",
       "testedAt": "2026-09-25",
@@ -232,17 +107,171 @@
       "failures": []
     },
     "independentArithmeticTest": {
-      "status": "not-tested",
-      "testedAt": null,
-      "total": 0,
-      "passed": 0,
-      "cases": []
+      "status": "passed",
+      "testedAt": "2026-10-03T18:32:58.690Z",
+      "total": 48,
+      "passed": 48,
+      "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+      "scope": "Tumour-site points plus four one-point criteria; all 48 combinations. Clinical probabilities and prophylaxis are not tested.",
+      "publicCandidateBankOmitted": true
+    },
+    "methodVersion": "Khorana 2008:localtumor+plaquetas+Hb/EPO+leucócitos+IMC, total 0–6",
+    "implementationVersion": "khorana@native-2026-10-03+6d3b1f534b04",
+    "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2384124/",
+    "versionEvidence": {
+      "status": "variant-and-source-edition-recorded",
+      "checkedAt": "2026-10-03",
+      "implementedVariant": "Estômago ou pâncreas 2 · pulmão, linfoma, ginecológico, bexiga ou testículo 1 · plaquetas ≥ 350.000/µL 1 · Hb < 10 g/dL ou estimulador da eritropoese 1 · leucócitos > 11.000/µL 1 · IMC ≥ 35 kg/m² 1. Máximo: 6.",
+      "inputContract": {
+        "fields": [
+          {
+            "key": "sitio",
+            "label": "Local do tumor primário",
+            "type": "radio",
+            "optional": false,
+            "options": {
+              "0": "Outros",
+              "1": "Alto risco: pulmão, linfoma, ginecológico, bexiga ou testículo",
+              "2": "Muito alto risco: estômago ou pâncreas"
+            }
+          },
+          {
+            "key": "plaq",
+            "label": "Plaquetas pré-quimioterapia ≥ 350.000/µL",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "hb",
+            "label": "Hemoglobina &lt; 10 g/dL ou uso de estimulador da eritropoese",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "leuco",
+            "label": "Leucócitos pré-quimioterapia &gt; 11.000/µL",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          },
+          {
+            "key": "imc",
+            "label": "IMC ≥ 35 kg/m²",
+            "type": "chk",
+            "optional": false,
+            "options": null
+          }
+        ],
+        "hash": "e0b02255ae8d31a81189e3d1cc5958992306dfc7b03e5612e3369fd42dc5bd20"
+      },
+      "sourceEditions": [
+        {
+          "citation": "Khorana AA et al. Development and validation of a predictive model for chemotherapy-associated thrombosis. Blood, 2008.",
+          "url": "https://doi.org/10.1182/blood-2007-10-116327",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Development and validation of a predictive model for chemotherapy-associated thrombosis.",
+            "year": "2008",
+            "firstPublicationDate": "2008-01-23",
+            "doi": "10.1182/blood-2007-10-116327",
+            "pmid": "18216292",
+            "pmcid": "PMC2384124",
+            "journal": "Blood",
+            "authors": "Khorana AA, Kuderer NM, Culakova E, Lyman GH, Francis CW."
+          },
+          "primaryPublicationUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2384124/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "bb71e3fc6f569aa10b175198c47c85dba12e2416ea0bd78352a336f9ba6ad2b3",
+          "matchedBy": "exact-DOI-or-PMID"
+        },
+        {
+          "citation": "Key NS et al. Venous thromboembolism prophylaxis and treatment in patients with cancer: ASCO clinical practice guideline update. J Clin Oncol, 2020.",
+          "url": "https://doi.org/10.1200/JCO.19.01461",
+          "class": "primary-publication-abstract-or-metadata-read",
+          "publicationEditionConfirmed": true,
+          "fullTextRetrieved": false,
+          "formulaConformance": "not-assessed",
+          "publication": {
+            "title": "Venous Thromboembolism Prophylaxis and Treatment in Patients With Cancer: ASCO Clinical Practice Guideline Update.",
+            "year": "2020",
+            "firstPublicationDate": "2019-08-05",
+            "doi": "10.1200/jco.19.01461",
+            "pmid": "31381464",
+            "journal": "Journal of clinical oncology : official journal of the American Society of Clinical Oncology",
+            "authors": "Key NS, Khorana AA, Kuderer NM, Bohlke K, Lee AYY, Arcelus JI, Wong SL, Balaban EP, Flowers CR, Francis CW, Gates LE, Kakkar AK, Levine MN, Liebman HA, Tempero MA, Lyman GH, Falanga A."
+          },
+          "primaryPublicationUrl": "https://pubmed.ncbi.nlm.nih.gov/31381464/",
+          "abstractAvailable": true,
+          "fullTextSha256": null,
+          "abstractSha256": "7c530b44edf3c91ff8757c87415688db02f8d3efd3eea9f0356fa1f03b49ae5b",
+          "matchedBy": "exact-DOI-or-PMID"
+        }
+      ],
+      "publicationEditionConfirmed": true,
+      "fullFormulaConformanceReviewed": false,
+      "formulaConformance": "Not established by bibliographic identity or automatic full-text retrieval; retain independent arithmetic and clinical review as separate evidence.",
+      "independentArithmetic": {
+        "status": "passed",
+        "testedAt": "2026-10-03T18:32:58.690Z",
+        "total": 48,
+        "passed": 48,
+        "evidencePath": "reports/review-20261003/native-score-source-oracles.json",
+        "scope": "Tumour-site points plus four one-point criteria; all 48 combinations. Clinical probabilities and prophylaxis are not tested."
+      },
+      "clinicalApproval": "not-performed",
+      "translationApproval": "not-performed",
+      "releaseApproval": "not-performed",
+      "implementationHash": "6d3b1f534b045a046397ecf6f1211254814f50b996d30ac305ef286774db22cc"
+    },
+    "limits": "Escore de risco de TEV no contexto de câncer e tratamento sistêmico ambulatorial, com dados pré-quimioterapia. O escore não mede risco de sangramento e não indica, sozinho, anticoagulação, fármaco ou dose. A classificação precisa ser complementada pela avaliação clínica e pelo risco de sangramento. A aplicação a população pediátrica, internação hospitalar ou contexto perioperatório não é estabelecida por estes testes numéricos locais e exige evidência e protocolo específicos.",
+    "limitsEvidence": {
+      "status": "primary-source-documentation-checked",
+      "sources": [
+        {
+          "url": "https://doi.org/10.1182/blood-2007-10-116327",
+          "edition": "Khorana et al. Blood2008,111:4902–4907",
+          "access": "Original publisher full-text open unavailable. Publisher indexed article identity inspected; original full-text restrictions were not inferred from a secondary score page."
+        },
+        {
+          "url": "https://www.hematology.org/-/media/hematology/files/clinicians/guidelines/vte/vte-update-03_24/19894_vte-prophylaxis-pocket-guide-8-panel___0001_high_res_proof-(2).pdf",
+          "edition": "ASH official VTE pocket guide, October2023, based on ASH2021 guideline",
+          "access": "Direct official PDF text read, page1 outpatient/systemic-therapy section andTable3, clinical judgement, bleeding risk and strength of recommendations."
+        }
+      ],
+      "checkedScope": "Only specific retrieved official sections listed per method. Failed original publisher requests explicitly separated from successful institutional primary-article copies or official guideline pages. No new website edits or clinical approval.",
+      "confirmedLimits": [
+        "The relevant guideline population is ambulatory patients with cancer receiving systemic therapy.",
+        "VTE risk classification must be complemented by clinical judgement and bleeding risk; conditional choices do not mean automatic prophylaxis.",
+        "Do not extend the original outpatient context automatically to hospitalized, perioperative or pediatric patients; this pass does not establish independent pediatric performance."
+      ],
+      "sourceReviewReport": "reports/review-20261003/native-population-limits-next-five-review.json",
+      "sourceReviewSha256": "2259ae5d265f007502a7e7abb5ea74579c9fd733fee2049a77d71fd93f6898cc",
+      "accessLimit": "Only the sections identified in each source access record were checked. Unretrieved publisher originals remain explicitly unretrieved; this is not a full source or population validation approval.",
+      "clinicalValidation": "not-performed",
+      "professionalLanguageReview": "not-performed",
+      "arithmeticChanged": false
     }
   },
-  "review": {
-    "status": "needs-review",
-    "reason": "Revisão documental e clínica independente pendente.",
-    "clinicalValidation": "not-performed"
+  "currentSource": {
+    "file": "apps/website/private/tool-code/khorana/calculator.js",
+    "bytes": 5183,
+    "sha256": "6d3b1f534b045a046397ecf6f1211254814f50b996d30ac305ef286774db22cc"
   },
-  "clinicalValidation": "not-performed"
+  "sourceToolSha256": "8104502b614ee74404cad5958b2303b0ade40578b624b62f982f73f6781778bb",
+  "omittedFullReferenceBanks": [
+    {
+      "rows": 48,
+      "sha256": "31aad2300122327172e18f49f738f941d93c2755d25da9bd8890995a1d11d733",
+      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+    }
+  ],
+  "clinicalApproval": "not-performed",
+  "professionalLanguageApproval": "not-performed",
+  "sourceRightsApproval": "not-performed"
 }

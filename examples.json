@@ -1,49 +1,119 @@
 [
   {
-    "label": "Câncer de mama, exames normais: 0 ponto",
-    "input": {
+    "id": "khorana",
+    "kind": "native-source-reference",
+    "index": 0,
+    "name": "Câncer de mama, exames normais: 0 ponto",
+    "originalInput": {
       "sitio": "0"
+    },
+    "input": {
+      "sitio": "0",
+      "plaq": false,
+      "hb": false,
+      "leuco": false,
+      "imc": false
     },
     "expected": {
       "score": 0,
       "level": "low"
     },
-    "originalInput": {
-      "sitio": "0"
+    "recordedResult": {
+      "main": [
+        "0",
+        "pontos"
+      ],
+      "label": "Escore de Khorana",
+      "raw": {
+        "score": 0
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
-    "input": {
+    "id": "khorana",
+    "kind": "native-source-reference",
+    "index": 1,
+    "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+    "originalInput": {
       "sitio": "1",
       "plaq": true
+    },
+    "input": {
+      "sitio": "1",
+      "plaq": true,
+      "hb": false,
+      "leuco": false,
+      "imc": false
     },
     "expected": {
       "score": 2,
       "level": "mid",
       "verdict": "intermediário"
     },
-    "originalInput": {
-      "sitio": "1",
-      "plaq": true
+    "recordedResult": {
+      "main": [
+        "2",
+        "pontos"
+      ],
+      "label": "Escore de Khorana",
+      "raw": {
+        "score": 2
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   },
   {
-    "label": "Câncer de pâncreas, Hb 9,5: 3 pontos",
-    "input": {
+    "id": "khorana",
+    "kind": "native-source-reference",
+    "index": 2,
+    "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+    "originalInput": {
       "sitio": "2",
       "hb": true
+    },
+    "input": {
+      "sitio": "2",
+      "hb": true,
+      "plaq": false,
+      "leuco": false,
+      "imc": false
     },
     "expected": {
       "score": 3,
       "level": "high"
     },
-    "originalInput": {
-      "sitio": "2",
-      "hb": true
+    "recordedResult": {
+      "main": [
+        "3",
+        "pontos"
+      ],
+      "label": "Escore de Khorana",
+      "raw": {
+        "score": 3
+      }
     },
-    "expandedZeroOptions": []
+    "provenance": {
+      "bank": {
+        "file": "reports/review-20261003/source-cases-audit.json",
+        "bytes": 885399,
+        "sha256": "1e609b8c90f6b7fef933d748f3ebd59836d4d06fe7b7e07ced569756091408d3"
+      },
+      "scope": "Existing recorded synthetic source expectations and source-audit transport baseline; no new independent oracle"
+    }
   }
 ]

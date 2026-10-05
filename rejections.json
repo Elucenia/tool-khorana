@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Reject null input",
+    "input": null,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject array input",
+    "input": [],
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject string input",
+    "input": "invalid",
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject numeric input",
+    "input": 1,
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": null
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject missing required field sitio",
+    "input": {
+      "plaq": false,
+      "hb": false,
+      "leuco": false,
+      "imc": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sitio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject empty required field sitio",
+    "input": {
+      "sitio": "",
+      "plaq": false,
+      "hb": false,
+      "leuco": false,
+      "imc": false
+    },
+    "expected": {
+      "code": "REQUIRED_FIELD",
+      "field": "sitio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject undocumented option sitio",
+    "input": {
+      "sitio": "__ELUCENIA_INVALID_OPTION__",
+      "plaq": false,
+      "hb": false,
+      "leuco": false,
+      "imc": false
+    },
+    "expected": {
+      "code": "INVALID_OPTION",
+      "field": "sitio"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean plaq",
+    "input": {
+      "sitio": "0",
+      "plaq": "2",
+      "hb": false,
+      "leuco": false,
+      "imc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "plaq"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean hb",
+    "input": {
+      "sitio": "0",
+      "plaq": false,
+      "hb": "2",
+      "leuco": false,
+      "imc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "hb"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean leuco",
+    "input": {
+      "sitio": "0",
+      "plaq": false,
+      "hb": false,
+      "leuco": "2",
+      "imc": false
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "leuco"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  },
+  {
+    "name": "Reject invalid boolean imc",
+    "input": {
+      "sitio": "0",
+      "plaq": false,
+      "hb": false,
+      "leuco": false,
+      "imc": "2"
+    },
+    "expected": {
+      "code": "INVALID_INPUT",
+      "field": "imc"
+    },
+    "scope": "Independently constructed schema/domain refusal; code observed from the pinned adapter, no clinical oracle"
+  }
+]
