@@ -79,3 +79,28 @@ Ergebnis der Formel oder Klassifikation. Interpretation, Vorgehen und Anwendbark
 Apache-2.0 gilt nur für den ELUCENIA-Code. Die Rechte an Instrumenten, Veröffentlichungen, Übersetzungen und Daten verbleiben bei den jeweiligen Rechteinhabern. Bewahren Sie LICENSE und NOTICE auf.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Dokumentierte Ergebnisse
+
+Die folgenden Angaben bewahren die Ausgaben der Methode für synthetische Beispiele. Sie stellen keine unabhängige klinische Validierung dar.
+
+### 1
+
+Niedriges Risiko: VTE bei 0,8 % (in etwa 2,5 Monaten)
+
+Eine routinemäßige Prophylaxe ist nicht indiziert.
+
+
+### 2
+
+Intermediäres Risiko: VTE bei 1,8 %
+
+ASCO 2020: Bei 2 Punkten oder mehr können Apixaban, Rivaroxaban oder LMWH angeboten werden, wenn kein hohes Blutungsrisiko besteht.
+
+
+### 3
+
+Hohes Risiko: VTE bei 7,1 %
+
+ASCO 2020: Thromboseprophylaxe (Apixaban, Rivaroxaban oder LMWH) anbieten, wenn kein hohes Blutungsrisiko und keine Interaktion besteht.
+

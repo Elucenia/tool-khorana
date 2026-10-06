@@ -79,3 +79,28 @@ Risultato della formula o classificazione. Interpretazione, condotta e applicabi
 Apache-2.0 si applica solo al codice di ELUCENIA. I diritti su strumenti, pubblicazioni, traduzioni e dati restano ai rispettivi titolari. Conservi LICENSE e NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Risultati documentati
+
+Le informazioni seguenti conservano gli output del metodo per esempi sintetici. Non costituiscono una validazione clinica indipendente.
+
+### 1
+
+Rischio basso: TEV nell'0,8% (in circa 2,5 mesi)
+
+La profilassi di routine non è indicata.
+
+
+### 2
+
+Rischio intermedio: TEV nell'1,8%
+
+ASCO 2020: con 2 punti o più, si può offrire apixaban, rivaroxaban o EBPM, se non vi è un rischio elevato di sanguinamento.
+
+
+### 3
+
+Rischio elevato: TEV nel 7,1%
+
+ASCO 2020: offrire tromboprofilassi (apixaban, rivaroxaban o EBPM) se non vi è un rischio elevato di sanguinamento né interazione.
+

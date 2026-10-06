@@ -79,3 +79,28 @@ Resultado de la fórmula o clasificación. La interpretación, la conducta y la 
 Apache-2.0 se aplica únicamente al código de ELUCENIA. Los derechos de los instrumentos, publicaciones, traducciones y datos permanecen en manos de sus respectivos titulares. Conserve LICENSE y NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Resultados documentados
+
+La información siguiente conserva las salidas del método para ejemplos sintéticos. No constituye una validación clínica independiente.
+
+### 1
+
+Bajo riesgo: TEV en 0,8% (en cerca de 2,5 meses)
+
+No está indicada la profilaxis de rutina.
+
+
+### 2
+
+Riesgo intermedio: TEV en 1,8%
+
+ASCO 2020: con 2 puntos o más, se puede ofrecer apixabán, rivaroxabán o HBPM, si no hay alto riesgo de sangrado.
+
+
+### 3
+
+Alto riesgo: TEV en 7,1%
+
+ASCO 2020: ofrecer tromboprofilaxis (apixabán, rivaroxabán o HBPM) si no hay alto riesgo de sangrado ni interacción.
+

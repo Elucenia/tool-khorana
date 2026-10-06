@@ -79,3 +79,28 @@ Formula or classification result. Interpretation, care and applicability depend 
 Apache-2.0 applies only to ELUCENIA code. Rights to instruments, publications, translations and data remain with their respective holders. Preserve LICENSE and NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Documented results
+
+The information below preserves the method outputs for synthetic examples. It does not constitute independent clinical validation.
+
+### 1
+
+Low risk: VTE in 0.8% (in about 2.5 months)
+
+Routine prophylaxis not indicated.
+
+
+### 2
+
+Intermediate risk: VTE in 1.8%
+
+ASCO 2020: if there is no high bleeding risk, apixaban, rivaroxaban or LMWH may be offered if the score is 2 points or more.
+
+
+### 3
+
+High risk: VTE in 7.1%
+
+ASCO 2020: offer thromboprophylaxis (apixaban, rivaroxaban or LMWH) if there is no high bleeding risk or interaction.
+

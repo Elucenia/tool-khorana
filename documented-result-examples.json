@@ -1,0 +1,537 @@
+{
+  "id": "khorana",
+  "implementationVersion": "khorana@native-2026-10-05+12395db6d271",
+  "scope": "Rendered current output against the same source method; not an independent numerical/clinical oracle",
+  "locales": {
+    "pt-BR": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Baixo risco: TEV em 0,8% (em cerca de 2,5 meses)",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "Profilaxia de rotina não indicada.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risco intermediário: TEV em 1,8%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "ASCO 2020: com 2 pontos ou mais, pode-se oferecer apixabana, rivaroxabana ou HBPM, se não houver risco alto de sangramento.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto risco: TEV em 7,1%",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "note": {
+            "text": "ASCO 2020: oferecer tromboprofilaxia (apixabana, rivaroxabana ou HBPM), se não houver risco alto de sangramento nem interação.",
+            "locale": "pt-BR",
+            "template": "documented-source"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "en": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Low risk: VTE in 0.8% (in about 2.5 months)",
+            "locale": "en",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "Routine prophylaxis not indicated.",
+            "locale": "en",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediate risk: VTE in 1.8%",
+            "locale": "en",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: if there is no high bleeding risk, apixaban, rivaroxaban or LMWH may be offered if the score is 2 points or more.",
+            "locale": "en",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "High risk: VTE in 7.1%",
+            "locale": "en",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: offer thromboprophylaxis (apixaban, rivaroxaban or LMWH) if there is no high bleeding risk or interaction.",
+            "locale": "en",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "es": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Bajo riesgo: TEV en 0,8% (en cerca de 2,5 meses)",
+            "locale": "es",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "No está indicada la profilaxis de rutina.",
+            "locale": "es",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Riesgo intermedio: TEV en 1,8%",
+            "locale": "es",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: con 2 puntos o más, se puede ofrecer apixabán, rivaroxabán o HBPM, si no hay alto riesgo de sangrado.",
+            "locale": "es",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Alto riesgo: TEV en 7,1%",
+            "locale": "es",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: ofrecer tromboprofilaxis (apixabán, rivaroxabán o HBPM) si no hay alto riesgo de sangrado ni interacción.",
+            "locale": "es",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Faible risque : TVE à 0,8 % (environ 2,5 mois)",
+            "locale": "fr",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "La prophylaxie de routine n’est pas indiquée.",
+            "locale": "fr",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque intermédiaire : TVE à 1,8 %",
+            "locale": "fr",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020 : à partir de 2 points, l’apixaban, le rivaroxaban ou l’HBPM peuvent être proposés, s’il n’existe pas de risque hémorragique élevé.",
+            "locale": "fr",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Risque élevé : TVE à 7,1 %",
+            "locale": "fr",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020 : proposer une thromboprophylaxie (apixaban, rivaroxaban ou HBPM) s’il n’existe pas de risque hémorragique élevé ni d’interaction.",
+            "locale": "fr",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "de": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Niedriges Risiko: VTE bei 0,8 % (in etwa 2,5 Monaten)",
+            "locale": "de",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "Eine routinemäßige Prophylaxe ist nicht indiziert.",
+            "locale": "de",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Intermediäres Risiko: VTE bei 1,8 %",
+            "locale": "de",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: Bei 2 Punkten oder mehr können Apixaban, Rivaroxaban oder LMWH angeboten werden, wenn kein hohes Blutungsrisiko besteht.",
+            "locale": "de",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Hohes Risiko: VTE bei 7,1 %",
+            "locale": "de",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: Thromboseprophylaxe (Apixaban, Rivaroxaban oder LMWH) anbieten, wenn kein hohes Blutungsrisiko und keine Interaktion besteht.",
+            "locale": "de",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "it": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio basso: TEV nell'0,8% (in circa 2,5 mesi)",
+            "locale": "it",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "La profilassi di routine non è indicata.",
+            "locale": "it",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio intermedio: TEV nell'1,8%",
+            "locale": "it",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: con 2 punti o più, si può offrire apixaban, rivaroxaban o EBPM, se non vi è un rischio elevato di sanguinamento.",
+            "locale": "it",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "Rischio elevato: TEV nel 7,1%",
+            "locale": "it",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: offrire tromboprofilassi (apixaban, rivaroxaban o EBPM) se non vi è un rischio elevato di sanguinamento né interazione.",
+            "locale": "it",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ar": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر منخفض: TEV بنسبة 0,8% (في حوالي 2,5 شهر)",
+            "locale": "ar",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "الوقاية الروتينية غير مُشار إليها.",
+            "locale": "ar",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر متوسط: TEV بنسبة 1,8%",
+            "locale": "ar",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: مع 2 نقاط أو أكثر، يمكن تقديم أبيكسابان أو ريفاروكسابان أو HBPM، إذا لم يكن هناك خطر مرتفع للنزف.",
+            "locale": "ar",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "خطر مرتفع: TEV بنسبة 7,1%",
+            "locale": "ar",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: تقديم الوقاية الخثرية (أبيكسابان، ريفاروكسابان أو HBPM) إذا لم يكن هناك خطر مرتفع للنزف أو تداخل.",
+            "locale": "ar",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "zh": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低风险：TEV 为 0,8%（约 2,5 个月内）",
+            "locale": "zh",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "不建议常规预防。",
+            "locale": "zh",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中等风险：TEV 为 1,8%",
+            "locale": "zh",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020：如无高出血风险，且评分为 2 分或以上，可提供阿哌沙班、利伐沙班或 HBPM。",
+            "locale": "zh",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高风险：TEV 为 7,1%",
+            "locale": "zh",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020：如无高出血风险且无相互作用，应提供血栓预防（阿哌沙班、利伐沙班或 HBPM）。",
+            "locale": "zh",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "ja": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "低リスク：TEV 0,8%（約 2,5 か月で）",
+            "locale": "ja",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "ルーチンの予防は適応されない。",
+            "locale": "ja",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "中間リスク：TEV 1,8%",
+            "locale": "ja",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020：2点以上では、出血リスクが高くなければ、アピキサバン、リバーロキサバンまたは HBPM を提案できる。",
+            "locale": "ja",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "高リスク：TEV 7,1%",
+            "locale": "ja",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020：高い出血リスクも相互作用もなければ、血栓予防（アピキサバン、リバーロキサバンまたは HBPM）を提供する。",
+            "locale": "ja",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ],
+    "hi": [
+      {
+        "name": "Câncer de mama, exames normais: 0 ponto",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "निम्न जोखिम: TEV 0,8% (लगभग 2,5 महीनों में)",
+            "locale": "hi",
+            "template": "documented-authored-4a6f16d6a9e8b36eb3a7"
+          },
+          "note": {
+            "text": "रूटीन प्रोफिलैक्सिस संकेतित नहीं है।",
+            "locale": "hi",
+            "template": "documented-authored-4633aab06063e3d86525"
+          },
+          "level": "low"
+        }
+      },
+      {
+        "name": "Câncer de pulmão com plaquetas 400 mil: 2 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "मध्यम जोखिम: TEV 1,8%",
+            "locale": "hi",
+            "template": "documented-authored-ea342293d235b0851793"
+          },
+          "note": {
+            "text": "ASCO 2020: यदि उच्च रक्तस्राव जोखिम न हो, तो 2 अंक या अधिक होने पर एपिक्साबैन, रिवरॉक्साबैन या HBPM दिया जा सकता है।",
+            "locale": "hi",
+            "template": "documented-authored-1722e2d2adc41d2a8460"
+          },
+          "level": "mid"
+        }
+      },
+      {
+        "name": "Câncer de pâncreas, Hb 9,5: 3 pontos",
+        "output": {
+          "rows": [],
+          "verdict": {
+            "text": "उच्च जोखिम: TEV 7,1%",
+            "locale": "hi",
+            "template": "documented-authored-6698707ed72c377d20a5"
+          },
+          "note": {
+            "text": "ASCO 2020: यदि उच्च रक्तस्राव जोखिम या इंटरैक्शन न हो, तो थ्रोम्बोप्रोफिलैक्सिस (एपिक्साबैन, रिवरॉक्साबैन या HBPM) देना चाहिए।",
+            "locale": "hi",
+            "template": "documented-authored-2ff553c488694f47d60b"
+          },
+          "level": "high"
+        }
+      }
+    ]
+  }
+}

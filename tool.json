@@ -116,7 +116,7 @@
       "publicCandidateBankOmitted": true
     },
     "methodVersion": "Khorana 2008:localtumor+plaquetas+Hb/EPO+leucócitos+IMC, total 0–6",
-    "implementationVersion": "khorana@native-2026-10-03+6d3b1f534b04",
+    "implementationVersion": "khorana@native-2026-10-05+12395db6d271",
     "currentMethodSource": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2384124/",
     "versionEvidence": {
       "status": "variant-and-source-edition-recorded",
@@ -227,7 +227,35 @@
       "clinicalApproval": "not-performed",
       "translationApproval": "not-performed",
       "releaseApproval": "not-performed",
-      "implementationHash": "6d3b1f534b045a046397ecf6f1211254814f50b996d30ac305ef286774db22cc"
+      "implementationHash": "12395db6d2718d314c0781fe8da13ffb5a609987257b81412e580993cf366650",
+      "documentedOutputContract": {
+        "fields": [
+          "level",
+          "verdict",
+          "rows",
+          "note"
+        ],
+        "scope": "Optional documented outputs already produced by the existing scientific method; no new classification or treatment decision.",
+        "sourceExposureReceipt": {
+          "file": "reports/review-20261005-completion/native-result-presentation-r1/applied-output-r1/receipt.json",
+          "sha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        },
+        "scientificBodiesUnchanged": true,
+        "clinicalApproval": "not-performed",
+        "professionalLanguageApproval": "not-performed"
+      },
+      "technicalBindingHistory": [
+        {
+          "recordedAt": "2026-10-05T23:55:42.176Z",
+          "scope": "Expose existing documented result fields; scientific body and complete input contract unchanged.",
+          "previousImplementationVersion": "khorana@native-2026-10-03+6d3b1f534b04",
+          "previousImplementationHash": "6d3b1f534b045a046397ecf6f1211254814f50b996d30ac305ef286774db22cc",
+          "implementationHash": "12395db6d2718d314c0781fe8da13ffb5a609987257b81412e580993cf366650",
+          "scientificBodySha256": "e85276683115c11c8a08c490b617391606f7137a1aaae50779ecc2e6796ea25d",
+          "metadataContractHash": "e0b02255ae8d31a81189e3d1cc5958992306dfc7b03e5612e3369fd42dc5bd20",
+          "exposureReceiptSha256": "ad5471530e501b906b966463cef1eb20e9745ac745fc30fb85d3ec4db2a333c3"
+        }
+      ]
     },
     "limits": "Escore de risco de TEV no contexto de câncer e tratamento sistêmico ambulatorial, com dados pré-quimioterapia. O escore não mede risco de sangramento e não indica, sozinho, anticoagulação, fármaco ou dose. A classificação precisa ser complementada pela avaliação clínica e pelo risco de sangramento. A aplicação a população pediátrica, internação hospitalar ou contexto perioperatório não é estabelecida por estes testes numéricos locais e exige evidência e protocolo específicos.",
     "limitsEvidence": {
@@ -260,15 +288,15 @@
   },
   "currentSource": {
     "file": "apps/website/private/tool-code/khorana/calculator.js",
-    "bytes": 5183,
-    "sha256": "6d3b1f534b045a046397ecf6f1211254814f50b996d30ac305ef286774db22cc"
+    "bytes": 5388,
+    "sha256": "12395db6d2718d314c0781fe8da13ffb5a609987257b81412e580993cf366650"
   },
-  "sourceToolSha256": "8104502b614ee74404cad5958b2303b0ade40578b624b62f982f73f6781778bb",
+  "sourceToolSha256": "ec686f424b86e90d772e84a8694bc204ceb235be6b9ea615af4960eb01adf322",
   "omittedFullReferenceBanks": [
     {
       "rows": 48,
       "sha256": "31aad2300122327172e18f49f738f941d93c2755d25da9bd8890995a1d11d733",
-      "reason": "Large independent reference bank not bundled; exact evidence scope and file references retained"
+      "reason": "Large independent reference bank not bundled; historical proof scope retained"
     }
   ],
   "clinicalApproval": "not-performed",

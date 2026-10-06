@@ -79,3 +79,28 @@ Résultat de la formule ou de la classification. L’interprétation, la conduit
 Apache-2.0 s’applique uniquement au code d’ELUCENIA. Les droits sur les instruments, publications, traductions et données restent ceux de leurs titulaires respectifs. Conservez LICENSE et NOTICE.
 
 ELUCENIA · Felipe Guedes · Copyright © 2026
+
+## Résultats documentés
+
+Les informations ci-dessous conservent les sorties de la méthode pour des exemples synthétiques. Elles ne constituent pas une validation clinique indépendante.
+
+### 1
+
+Faible risque : TVE à 0,8 % (environ 2,5 mois)
+
+La prophylaxie de routine n’est pas indiquée.
+
+
+### 2
+
+Risque intermédiaire : TVE à 1,8 %
+
+ASCO 2020 : à partir de 2 points, l’apixaban, le rivaroxaban ou l’HBPM peuvent être proposés, s’il n’existe pas de risque hémorragique élevé.
+
+
+### 3
+
+Risque élevé : TVE à 7,1 %
+
+ASCO 2020 : proposer une thromboprophylaxie (apixaban, rivaroxaban ou HBPM) s’il n’existe pas de risque hémorragique élevé ni d’interaction.
+
